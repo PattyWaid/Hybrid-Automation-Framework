@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+     <listeners>
+         <listener class-name="com.hybridframework.utilities.Reporting"></listener>
+     </listeners>
+
+    <test name="E:/Ionic/demoApp/HybridFramework">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.hybridframework.testcases.TC01_LoginPage_001">
+            </class>
+            <class name="com.hybridframework.testcases.TC02_LoginDataDriven_002">
+<!--                <methods>-->
+<!--                    <include name="loginTest"/>-->
+<!--                </methods>-->
+            </class>
+            <class name="com.hybridframework.testcases.TC03_VerifyBlogList_003">
+            </class>
+        </classes>
+    </test>
+</suite>
